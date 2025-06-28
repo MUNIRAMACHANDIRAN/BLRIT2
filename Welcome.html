@@ -52,7 +52,7 @@
 <body>
 
   <div class="header">
-    <img src="/Comviva/Logo.png" class="logo" alt="Logo">
+    <img src="/Logo.png" class="logo" alt="Logo">
     <div class="user-info">
       <span id="welcomeMessage">Welcome, User</span>
       <span id="datetime"></span>
@@ -65,7 +65,7 @@
     <div class="row text-center mt-4">
       <div class="col-md-3">
         <div class="card p-3">
-          <a href="Windows/Windows_List.html">
+          <a href="/Windows_List.html">
             <div class="card-body">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/2048px-Windows_logo_-_2012.svg.png" alt="Windows Logo">
               <div>Windows</div>
@@ -75,7 +75,7 @@
       </div>
       <div class="col-md-3">
         <div class="card p-3">
-          <a href="/Comviva/Windows/Mac_List.html">
+          <a href="/Mac_List.html">
             <div class="card-body">
               <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Mac Logo">
               <div>Mac</div>
@@ -85,7 +85,7 @@
       </div>
       <div class="col-md-3">
         <div class="card p-3">
-          <a href="/Comviva/Windows/Linux.html">
+          <a href="/Linux.html">
             <div class="card-body">
               <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo">
               <div>Linux</div>
@@ -95,7 +95,7 @@
       </div>
       <div class="col-md-3">
         <div class="card p-3">
-          <a href="/Comviva/Android.html">
+          <a href="/Android.html">
             <div class="card-body">
               <img src="https://images.vexels.com/media/users/3/139556/isolated/svg/1718a076e29822051df8bcf8b5ce1124.svg" alt="Red Hat Logo">
               <div>Andriod</div>
@@ -107,17 +107,15 @@
   </div>
 
   <script>
-    // Get user name and display
     const userName = localStorage.getItem("userName") || "User";
     document.getElementById("welcomeMessage").textContent = `Welcome, ${userName}!`;
 
-    // Date & Time
     const now = new Date();
     document.getElementById("datetime").textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString();
 
     function logout() {
       localStorage.clear();
-      window.location.href = "/Comviva/Login.html";
+      window.location.href = "/Login.html";
     }
   </script>
 
