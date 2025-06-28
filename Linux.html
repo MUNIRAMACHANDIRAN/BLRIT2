@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac & Linux Softwares</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      height: 50px;
+    }
+    .user-info {
+      text-align: right;
+    }
+    .user-info span {
+      display: block;
+    }
+    .btn-logout {
+      margin-top: 5px;
+    }
+    table {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #28a745;
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 0 10px #28a745;
+      transition: all 0.3s ease-in-out;
+    }
+    .nav-tabs .nav-link {
+      color: white;
+      border: none;
+      transition: all 0.3s;
+    }
+    .nav-tabs .nav-link:hover {
+      color: #28a745;
+    }
+    .table-hover tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .tab-content {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" class="logo" alt="Logo">
+    <div class="user-info">
+      <span id="welcomeUser">Welcome, User</span>
+      <span id="datetime"></span>
+      <button class="btn btn-sm btn-light btn-logout" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-center mt-4 text-success">Linux Platform - Software List</h1>
+    <ul class="nav nav-tabs mt-5" id="categoryTabs">
+      <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#mac">Mac</a></li>
+      <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#linux">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="mac" class="tab-pane fade show active mt-3">
+        <table class="table table-bordered table-striped table-hover text-white">
+          <thead class="table-dark">
+            <tr><th>#</th><th>Name</th><th>Version</th><th>Download</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Final Cut Pro</td><td>10.6</td><td><a href="https://www.apple.com/final-cut-pro/" class="text-success">Download</a></td></tr>
+            <tr><td>2</td><td>Xcode</td><td>15</td><td><a href="https://developer.apple.com/xcode/" class="text-success">Download</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="linux" class="tab-pane fade mt-3">
+        <table class="table table-bordered table-striped table-hover text-white">
+          <thead class="table-dark">
+            <tr><th>#</th><th>Name</th><th>Version</th><th>Download</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Ubuntu</td><td>22.04</td><td><a href="https://ubuntu.com/download" class="text-success">Download</a></td></tr>
+            <tr><td>2</td><td>GIMP</td><td>2.10</td><td><a href="https://www.gimp.org/" class="text-success">Download</a></td></tr>
+            <tr><td>3</td><td>LibreOffice</td><td>7.6</td><td><a href="https://www.libreoffice.org/" class="text-success">Download</a></td></tr>
+            <tr><td>4</td><td>Blender</td><td>3.5</td><td><a href="https://www.blender.org/" class="text-success">Download</a></td></tr>
+            <tr><td>5</td><td>VS Code</td><td>1.90</td><td><a href="https://code.visualstudio.com/" class="text-success">Download</a></td></tr>
+            <tr><td>6</td><td>Postman</td><td>10</td><td><a href="https://www.postman.com/downloads/" class="text-success">Download</a></td></tr>
+            <tr><td>7</td><td>VirtualBox</td><td>7.0</td><td><a href="https://www.virtualbox.org/" class="text-success">Download</a></td></tr>
+            <tr><td>8</td><td>Docker</td><td>24</td><td><a href="https://www.docker.com/products/docker-desktop/" class="text-success">Download</a></td></tr>
+            <tr><td>9</td><td>Anaconda</td><td>2024.03</td><td><a href="https://www.anaconda.com/products/distribution" class="text-success">Download</a></td></tr>
+            <tr><td>10</td><td>IntelliJ IDEA</td><td>2024.1</td><td><a href="https://www.jetbrains.com/idea/download/" class="text-success">Download</a></td></tr>
+            <tr><td>11</td><td>Zoom</td><td>5.16</td><td><a href="https://zoom.us/download" class="text-success">Download</a></td></tr>
+            <tr><td>12</td><td>Slack</td><td>4.37</td><td><a href="https://slack.com/downloads/linux" class="text-success">Download</a></td></tr>
+            <tr><td>13</td><td>TeamViewer</td><td>15</td><td><a href="https://www.teamviewer.com/en/download/linux/" class="text-success">Download</a></td></tr>
+            <tr><td>14</td><td>AnyDesk</td><td>7.1</td><td><a href="https://anydesk.com/en/downloads/linux" class="text-success">Download</a></td></tr>
+            <tr><td>15</td><td>Thunderbird</td><td>115</td><td><a href="https://www.thunderbird.net/en-US/" class="text-success">Download</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const user = localStorage.getItem("userName") || "User";
+    document.getElementById("welcomeUser").textContent = "Welcome, " + user;
+    const now = new Date();
+    document.getElementById("datetime").textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString();
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "index.html";
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
